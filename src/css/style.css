@@ -5,6 +5,16 @@ main .nft-content .nft-author, main .nft-content .nft-price .date, main .nft-con
   gap: 0.5rem;
 }
 
+main .nft-img:hover .overlay-icon, main .nft-img .overlay-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,8 +39,29 @@ main {
   border-radius: 1rem;
   box-shadow: 0 10px 40px 10px hsl(216deg, 55%, 5%);
 }
+main .nft-img {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
 main .nft-img img {
   width: 100%;
+  border-radius: 1rem;
+}
+main .nft-img .overlay {
+  cursor: pointer;
+}
+main .nft-img .overlay-bg {
+  background-color: hsl(178deg, 100%, 50%);
+  opacity: 0;
+}
+main .nft-img:hover .overlay-icon {
+  background-image: url("../../images/icon-view.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main .nft-img:hover .overlay-bg {
+  opacity: 0.5;
   border-radius: 1rem;
 }
 main .nft-content {
@@ -39,6 +70,9 @@ main .nft-content {
 main .nft-content .nft-desc h1 {
   font-size: 1.625rem;
   font-weight: 700;
+}
+main .nft-content .nft-desc h1:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 main .nft-content .nft-desc p {
   margin: 1rem 0;
@@ -74,6 +108,9 @@ main .nft-content .nft-author img {
 }
 main .nft-content .nft-author .author {
   color: hsl(0deg, 0%, 100%);
+}
+main .nft-content .nft-author .author:hover {
+  color: hsl(178deg, 100%, 50%);
 }
 
 @media screen and (min-width: 1000px) {
