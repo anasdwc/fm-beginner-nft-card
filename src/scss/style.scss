@@ -23,6 +23,11 @@ $line-very-dark-blue: hsl(215, 32%, 27%);
   right: 0;
 }
 
+%link {
+  text-decoration: none;
+  color: $white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -94,8 +99,12 @@ main {
         font-size: 1.625rem;
         font-weight: 700;
 
-        &:hover {
-          color: $primary-cyan;
+        a {
+          @extend %link;
+
+          &:hover {
+            color: $primary-cyan;
+          }
         }
       }
 
@@ -143,8 +152,12 @@ main {
       .author {
         color: $white;
 
-        &:hover {
-          color: $primary-cyan;
+        a {
+          @extend %link;
+
+          &:hover {
+            color: $primary-cyan;
+          }
         }
       }
     }
