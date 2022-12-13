@@ -27,6 +27,7 @@ main {
   background-color: hsl(216deg, 50%, 16%);
   padding: 1.5rem;
   border-radius: 1rem;
+  box-shadow: 0 10px 40px 10px hsl(216deg, 55%, 5%);
 }
 main .nft-img img {
   width: 100%;
@@ -64,6 +65,7 @@ main .nft-content .nft-price .date {
 main .nft-content .nft-author {
   color: hsl(215deg, 51%, 70%);
   font-weight: 300;
+  font-size: 0.9rem;
 }
 main .nft-content .nft-author img {
   width: 32px;

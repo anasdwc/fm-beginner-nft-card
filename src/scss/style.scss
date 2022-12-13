@@ -39,6 +39,7 @@ main {
   border-radius: 1rem;
   
   // Add box shadow
+  box-shadow: 0 10px 40px 10px hsl(216deg 55% 5%);
 
   .nft-img img {
     width: 100%;
@@ -87,6 +88,7 @@ main {
       color: $primary-soft-blue;
       font-weight: 300;
       @extend %center-icon;
+      font-size: .9rem;
 
       img {
         width: 32px;
